@@ -1,0 +1,103 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.chart-area {
+    fill: white;
+}
+
+/* ------ Title in center ------ */
+
+.title-top {
+	text-anchor: middle;
+	font-size: 22px;
+}
+.title-bottom {
+	text-anchor: middle;
+	font-size: 14px;
+	fill: #ababab;
+	font-weight: 300
+}
+
+/* ------ Datapoint circles ------ */
+
+.circle {
+	fill: #a2a2a2;
+	opacity: 0.6;
+}
+
+.circle-top {
+	fill: white;
+	opacity: 0.7;	
+}
+
+/* ------ Axes ------ */
+
+.average-line {
+	stroke: #ffec0c;
+    stroke-width: 1.5px;
+    fill: none;
+}
+
+.axis-line {
+    fill: none;
+    stroke: #b3b3b3;
+    stroke-linecap: round;
+    stroke-dasharray: 0,5;
+    stroke-width: 1.5;
+}
+
+.axis-number {
+	text-anchor: middle;
+	font-size: 12px;
+	fill: #b5b5b5;
+}
+
+.time-axis {
+	fill: #d4d4d4;
+}
+
+.time-axis-text {
+	fill: #989898;
+	font-size: 10px 
+}
+
+/* ------ Tooltip annotation ------ */
+
+.annotation path {
+	fill: none;
+	stroke: #1d1d1d;
+	stroke-width: 1.5px;
+}
+
+.annotation text {
+	fill: #161616;
+	font-size: 12px;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+	line-height: 200%;
+}
+
+.annotation-note-bg {
+	fill: none;
+}
+
+.annotation .annotation-subject {
+	stroke-dasharray: 2,4;
+    stroke-linecap: round;
+    stroke-width: 1.5px;
+}
+
+.annotation-note-title {
+	font-weight: bold;
+}
+
+.annotation .connector-dot {
+    fill: white;
+    transform: scale(1.5);
+}
+
+.annotation.average-note .connector, .annotation.average-note .connector-dot, .annotation.average-note .note-line {
+    stroke: #ffec0c;
+}
